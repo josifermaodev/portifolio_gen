@@ -39,7 +39,7 @@ Para visualizar o projeto localmente, siga as instruções abaixo:
 
 1. Clone o repositório:
 
-  ```bash
+```bash
 
    git clone https://github.com/seu-usuario/seu-repositorio.git
 
@@ -47,7 +47,7 @@ Para visualizar o projeto localmente, siga as instruções abaixo:
 
 2. Abra o projeto no Visual Studio Code:
 
-   ```bash
+```bash
 
    code seu-repositorio
 
