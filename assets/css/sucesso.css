@@ -1,0 +1,9 @@
+
+.sucesso_container{
+    display: flex;
+    justify-content: center;
+    max-width: 1120px;
+    margin: 16px auto;
+    padding: 0 1rem;
+    height: calc(100vh - 100px);
+}
