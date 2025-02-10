@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portifólio">
     <meta name="author" content="Josiane Fermao">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" href="./assets/img/favicon.svg">
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
     <title>Portifólio JosianeDev</title>
 </head>
 <body>
 
     <!-- Cabeçalho -->
-    <header>
-        <div id="header_content">
+    <header class="flex menu_container">
+        <div id="header_content" class="menu_content">
             <!-- Título do Cabeçalho -->
             <div id="titulo">
                 <a href="#">Universo</a>
             </div>
 
             <!-- Menu -->
-            <div id="menu">
+            <div id="menu" class="flex">
                 <nav>
                     <!-- Marcadores não ordenados -->
-                     <ul>
+                     <ul class="flex menu_list">
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">Sobre</a></li>
                         <li><a href="#contact">Contato</a></li>
@@ -36,24 +42,24 @@
     <!-- Seção principal da página -->
     <main>
 
-        <section id="home">
+        <section id="home" class="flex home_container">
             
-            <article id="home_texto">
+            <article id="home_texto" class="flex home_content">
                 <h4>Bem vindo ao Novo Universo</h4>
                 <h1>Mundos diferentes para pessoas diferentes</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, architecto cumque? Aspernatur inventore, natus nobis dolor et libero sunt a? Adipisci debitis deserunt facilis aliquam repellendus autem enim temporibus sapiente!</p>
-                <a href="https://github.com/josifermaodev" target="_blank">Explorar</a>
+                <a class="botao" href="https://github.com/josifermaodev" target="_blank">Explorar</a>
             </article>
 
-            <article id="home_imagem">
+            <article id="home_imagem" class="flex home_content">
                 <img src="./assets/img/astronauta.svg" alt="Capaçete de astronauta animado">
             </article>
 
         </section>
 
-        <section id="about">
-            <img src="./assets/img/user_02.svg" alt="Foto do Perfil do Github" />
-            <article id="about_texto">
+        <section id="about" class="flex about_container">
+            <img class="about_image" src="./assets/img/user_02.svg" alt="Foto do Perfil do Github" />
+            <article id="about_texto" class="flex about_content">
                 <h1>Sobre mim</h1>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
@@ -61,8 +67,8 @@
                     quia at, tenetur vel suscipit aliquam libero aliquid. Est in
                     eligendi facilis.
                 </p>
-                <div id="about_github">
-                    <a href="https://github.com/josifermaodev" target="_blank"> Github</a>
+                <div id="about_github" class="github_infos">
+                    <a class="botao" href="https://github.com/josifermaodev" target="_blank"> Github</a>
                     <p>200 Seguidores</p>
                     <p>20 Repositórios</p>
                 </div>
@@ -103,7 +109,7 @@
     </main>
     
     <!-- Rodapé -->
-    <footer>
+    <footer class="flex">
         Feito com 🩷 por Josiane Fermao - 2025
     </footer>
 
