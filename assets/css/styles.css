@@ -59,6 +59,7 @@ button, a {
     align-items: center;
 }
 
+/* -------------- Menu -------------- */
 
 .menu_container {
     height: 80px;
@@ -96,7 +97,9 @@ button, a {
 
 .menu_list li {
     margin-left: 1rem;
-}
+} 
+
+/* -------------- HOME -------------- */
 
 .home_container {
     max-width: 1120px;
@@ -140,6 +143,8 @@ h4 {
     width: 75%;
 }
 
+/* -------------- SOBRE -------------- */
+
 .about_container {
     max-width: 1120px;
     gap: 24px;
@@ -172,11 +177,101 @@ h4 {
 }
 
 .github_infos {
-    width: 90%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+}
+
+/* -------------- CONTATO -------------- */
+
+.contato_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    max-width: 1120px;
+    margin: 4rem auto 2rem;
+    padding: 0;
+}
+
+.contato_container h4 {
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contato_content {
+    flex-direction: column;
+    margin: 4rem 0 0 0;
+    font-size: 1.25rem;
+}
+
+.contato_content p {
+    display: block;
+    text-align: justify;
+}
+
+.social_container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0 0 0;
+}
+
+.social_icon{
+    display: flex;
+    justify-content: center;
+    width: 4.75rem;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 0 0 0;
+    padding: 1.25rem;
+    border: none;
+}
+
+form label {
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+form input,
+textarea {
+    width: 100%;
+    margin: 0.25rem 0 1rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+form span {
+    margin-bottom: 0.25rem;
+    margin-left: 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: red;
+}
+
+
+.social_icon:hover {
+    filter: brightness(0) 
+            saturate(100%) 
+            invert(20%) 
+            sepia(24%) 
+            saturate(4557%) 
+            hue-rotate(242deg) 
+            brightness(89%) 
+            contrast(108%);
 }
 
 footer {
@@ -188,27 +283,209 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 768px) {
-    .home_container{
-        flex-direction: column-reverse;
+
+/* -------------- RESPONSIVIDADE -------------- */
+
+@media (max-width: 480px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
     }
-    
-    .about_container{
+
+    main {
+        display: flex;
+        flex: 1;
         flex-direction: column;
     }
 
-    .home_content, 
-    .about_content{
-        width: 90%; 
+    footer {
+        margin: auto;
     }
 
-    .github_infos {
+    .menu_container {
+        height: auto;
+        padding: 1rem 0;
+
+    }
+
+    .menu_content {
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    #titulo a {
+        font-size: 1.75rem;
+    }
+
+    .menu_list{
+        display: none;
+    }
+
+    .home_container {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .home_content {
+        width: 100%;
+    }
+
+    .home_content h1 {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .home_content .botao {
         width: 80%;
     }
+
+    .home_content img {
+        width: 80%;
+    }
+
+    #home_texto {
+        margin-top: 0.5rem;
+    }
+
+    #home_imagem {
+        margin-bottom: 0;
+    }
+
+    .about_container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    .about_container img {
+        width: 70%;
+    }
+
+    .sobre_container h1{
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .github_infos{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .github_infos p {
+        display: none;
+    }
+
+    .github_infos .botao {
+        width: 80%;
+    }
+
+    .social_icon img {
+        width: 3rem;
+        height: auto;
+    }
+
+    .contato_container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+
+    .contato_content{
+        width: 100%;
+    }
+
+    .contato_content h4 {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .contato_content p {
+        margin: 1rem;
+        font-size: 1rem;
+    }
+
+    .social_container{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .social_icon {
+        width: 80%;
+        height: auto;       
+    }
+
+    form {
+        margin: 1rem 0 0 0;
+        padding: 1rem;
+    }
+
+    footer {
+        margin: 0;
+        height: auto;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
 }
 
-@media (max-width: 440px) {
-    .github_infos{
+@media (min-width: 480px) and (max-width: 955px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .menu_container {
+        height: auto;
+        padding: 1.5rem 0;
+    }
+
+    .home_container {
         flex-direction: column-reverse;
+        width: 80%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .home_content {
+        width: 100%;
+    }
+
+    .about_container {
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    .about_container img {
+        width: 50%;
+    }
+
+    .contato_container {
+        grid-template-columns: 1fr;
+        width: 80%;
+        height: auto;
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+
+    .social_icon img {
+        width: 5rem;
+        height: auto;
+    }
+
+    footer {
+        margin: 0;
+        height: auto;
+        width: 100%;
+        padding: 1.5rem 0;
     }
 }
