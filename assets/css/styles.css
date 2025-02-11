@@ -56,7 +56,14 @@ button, a {
     color: var(--purple-500);
 }
 
-.botao:hover {
+.botao a{
+    font-weight: 700;
+    color: var(--purple-500);
+}
+
+
+
+.botao:hover{
     background: var(--gradiente-800);
     color: var(--white);
 }
