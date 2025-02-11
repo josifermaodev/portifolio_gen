@@ -2,8 +2,8 @@
 
 :root {
     --purple-200: #03A66A;
-    --purple-500: #02734A;
-    --purple-800: #0B5943;
+    --purple-500: #1db38d;
+    --gradiente-800: linear-gradient(90deg, #0ee1b7,#45d971,#08a022);
  
     --gray-200: #ebebeb;
     --gray-400: #505861;
@@ -46,14 +46,14 @@ button, a {
     text-align: center;
     padding: 12px 32px;
     background: none;
-    border: 1px solid var(--purple-800);
+    border: 1px solid var(--purple-500);
     border-radius: 10px;
     font-weight: 700;
-    color: var(--purple-800);
+    color: var(--purple-500);
 }
 
 .botao:hover {
-    background-color: var(--purple-800);
+    background: var(--gradiente-800);
     color: var(--white);
 }
 
@@ -83,8 +83,7 @@ button, a {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: var(--purple-800);
-    border-bottom: 1px solid var(--purple-500);
+    background: var(--gradiente-800);
     filter: opacity(0.9);
 }
 
@@ -189,7 +188,7 @@ h4 {
 .about_image {
     width: 25%;
     border-radius: 100%;
-    border: solid 3px var(--purple-800);
+    border: solid 3px var(--purple-500);
 
 }
 
@@ -282,18 +281,18 @@ form span {
 
 .social_icon:hover {
     filter: brightness(0) 
-            saturate(100%) 
-            invert(20%) 
-            sepia(24%) 
-            saturate(4557%) 
-            hue-rotate(242deg) 
-            brightness(89%) 
-            contrast(108%);
+        saturate(100%) 
+        invert(48%) 
+        sepia(20%) 
+        saturate(3200%) 
+        hue-rotate(110deg) 
+        brightness(90%) 
+        contrast(105%);
 }
 
 footer {
     display: flex;
-    background-color: var(--purple-800);
+    background: var(--gradiente-800);
     color: var(--white);
     font-weight: 700;
     height: 80px;
