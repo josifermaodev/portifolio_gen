@@ -1,7 +1,7 @@
 @import url(/assets/css/sucesso.css);
 
 :root {
-    --purple-200: #03A66A;
+    --purple-200: #004116;
     --purple-500: #1db38d;
     --gradiente-800: linear-gradient(90deg, #0ee1b7,#45d971,#08a022);
  
@@ -42,6 +42,10 @@ button, a {
     cursor: pointer;
 }
 
+.divider {
+    border-top: 1px solid var(--purple-500);
+}
+
 .botao {
     text-align: center;
     padding: 12px 32px;
@@ -80,7 +84,7 @@ button, a {
 
 .menu_container {
     height: 80px;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     background: var(--gradiente-800);
@@ -189,7 +193,11 @@ h4 {
     width: 25%;
     border-radius: 100%;
     border: solid 3px var(--purple-500);
+    transition: transform 0.3s ease-in-out;
+}
 
+.about_image:hover {
+    transform: scale(1.1);
 }
 
 .github_infos {
@@ -241,6 +249,19 @@ h4 {
     justify-content: center;
     width: 4.75rem;
     height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social_icon:hover {
+    filter: brightness(0) 
+        saturate(100%) 
+        invert(48%) 
+        sepia(20%) 
+        saturate(3200%) 
+        hue-rotate(110deg) 
+        brightness(90%) 
+        contrast(105%);
+    transform: scale(1.1);
 }
 
 form {
@@ -262,7 +283,7 @@ textarea {
     margin: 0.25rem 0 1rem;
     padding: 0.5rem;
     border-radius: 20px;
-    border: solid 1px var(--purple-200);
+    border: solid 1px var(--purple-500);
     font-size: 1rem;
 }
 
@@ -279,16 +300,7 @@ form span {
 }
 
 
-.social_icon:hover {
-    filter: brightness(0) 
-        saturate(100%) 
-        invert(48%) 
-        sepia(20%) 
-        saturate(3200%) 
-        hue-rotate(110deg) 
-        brightness(90%) 
-        contrast(105%);
-}
+
 
 footer {
     display: flex;
@@ -317,6 +329,10 @@ footer {
 
     footer {
         margin: auto;
+    }
+
+    .divider {
+        border-top: none;
     }
 
     .menu_container {
@@ -457,6 +473,11 @@ footer {
         flex-direction: column;
         min-height: 100vh;
     }
+
+    .divider {
+        border-top: none;
+    }
+
 
     .menu_container {
         height: auto;

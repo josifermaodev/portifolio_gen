@@ -21,5 +21,11 @@
     font-weight: 700;
 }
 
-
-                                         
+.gradiente {
+    background: var(--gradiente-800);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    font-weight: 700;
+}
+                                        
